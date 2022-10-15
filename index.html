@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test1{
+            background-color: aqua;
+        }
+        .main{
+            background-color: orange;
+        }
+        .main2{
+            background-color: brown;
+        }
+        h1{
+            background-color: blue;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href=""> // External CSS -->
+    
+</head>
+<body >
+<!-- //1.create a httml form element which consist of following fields
+1.firstname
+2.middlename
+3.lastname
+4.email
+5.passowrd
+6.to upload a file image -->
+<div style="background-color: red; font-size: 30px;">Change content color</div><br>
+<div class="main main2" id="test1">Try this two class name:)</div><br>
+<form method="POST">
+<label for="firstname">First Name</label>
+<input type="text" name="fname" id="firstname">
+<label for="middlename">Middle Name</label>
+<input type="text" name="mname" id="middlename">
+<label for="lastname">Last Name</label>
+<input type="text" name="lname" id="lastname"><br><br>
+<label for="email"><h1>Email:</h1></label>
+<input type="email" name="mail" id="email" required><br><br>
+<label for="passowrd">Password</label>
+<input type="password" name="pass" id="passowrd"><br><br>
+<label for="fileupload">File Upload</label>
+<input type="file" name="fileupload" id="fileupload"><br><br>
+<input type="submit" value="submit" onclick="complete()">
+</form>
+<!-- Table -->
+<style>
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+<table>
+    <thead>
+        <th>State of health</th>
+        <th colspan="2">Fasting Value</th>
+        <th>After Remaining</th>
+    </thead>
+    <thead>
+        <th colspan="1"></th>
+        <th >Minimum</th>
+        <th>Normal</th>
+        <th>2 hours of Eating</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>healthy</th>
+            <th>70</th>
+            <th>100</th>
+            <th>Less than 140</th>
+        </tr>
+        <tr>
+            <th>Pre-Diabetes</th>
+            <th>101</th>
+            <th>126</th>
+            <th>140 to 200</th>
+        </tr>
+        <tr>
+            <th>Diabetes</th>
+            <th>more than 126</th>
+            <th>Not Applicable</th>
+            <th>More than 200</th>
+        </tr>
+    </tbody>
+</table>
+
+
+<script>
+    function complete(){
+    alert("data successfully sumbit");
+}
+</script>
+</body>
+</html>
